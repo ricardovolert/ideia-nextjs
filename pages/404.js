@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Nav from '../components/nav'
 
-function SobrePage(){
+function ErrorPage404(){
     return (
         <div>
             <Head>
@@ -18,7 +18,7 @@ function SobrePage(){
 
             <div className="py-10">
                 <h1 className="text-5xl text-center text-accent-1">
-                    Sobre
+                    Error 404
                 </h1>
             </div>
 
@@ -34,4 +34,4 @@ function SobrePage(){
 }
 
 
-export default SobrePage
+export default ErrorPage404

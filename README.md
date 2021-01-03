@@ -15,7 +15,7 @@ Everything dies, but it is cool to learn during the journey and have options to 
 
 ## Some Observations
 
-This project is for studies only.
+This project is for studies only. There are no predetermined functionalities, however, the objective is to develop the project initially elaborated as a small example of NextJS pages, thus, it is natural that this project is different from the instructions mentioned below, however, they remain unchanged as they serve as scope for creating this project and can be reused by people looking to learn about the subject.
 
 ## Installers
 
