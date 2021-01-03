@@ -1,4 +1,4 @@
-# ideia-nextjs: Integration Project (VS Code + Github + Versel)
+# ideia-nextjs: Integration Project (VS Code + Github + Vercel)
 
 
 ## About this Project
@@ -192,7 +192,7 @@ now let's change something we want and let's push this:
     git commit -m 'nova chamada'
     git push origin teste
 
-and at this moment versel will already deploy to a separate URL and we can observe the "pull request" on Github that Versel is commenting on the creation of this deploy and when it is finished, will add the URL for pre-review. Thus, we will have two versions running at the same time.
+and at this moment Vercel will already deploy to a separate URL and we can observe the "pull request" on Github that Vercel is commenting on the creation of this deploy and when it is finished, will add the URL for pre-review. Thus, we will have two versions running at the same time.
 
 ## Support tools
 - Vercel
