@@ -1,9 +1,10 @@
 import Link from 'next/link';
 
-function Home(){
+
+function Sobre(){
     return (
         <div>
-            <h2>Home Page</h2>
+            <h2>Sobre</h2>
 
             <p>
                 <Link href="/">
@@ -26,6 +27,4 @@ function Home(){
     )
 }
 
-
-
-export default Home
+export default Sobre
