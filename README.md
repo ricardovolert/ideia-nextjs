@@ -282,6 +282,8 @@ Oh, I installed sass
 
 And I deleted **next.config.js** and king the local server that apparently worked naturally, just like when there was the **next.config.js** file in the project.
 
+Here, the project has been updated and is functional ... What caught my attention is the speed of how the structure, packages and various things in this language are updated from version to version, making it challenging to keep this type of software constantly updated.
+
 
 ## Support tools
 - Vercel
