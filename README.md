@@ -51,10 +51,11 @@ or
 
 ## Built With
 
-- React
+- [React](https://github.com/facebook/react)
 - React-Dom
-- NodeJS
-- NextJS
+- [NodeJS](https://github.com/nodejs)
+- [NextJS](https://github.com/vercel/next.js)
+- [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)
 
 ## Steps
 (Using a repository on Github)
@@ -254,6 +255,19 @@ In the root directory, where the pages directory is located, we create the *styl
     @tailwind utilities;
 
 
+### Step 4
+
+According to [Bruno Bertolini](https://github.com/brunobertolini) recommendations, I performed the following command in the VSCode terminal:
+
+    $ npm install @zeit/next-css autoprefixer
+
+and created the **next.config.js** page at the root of the project with the following code:
+
+    const withCSS = require('@zeit/next-css')
+    module.exports = withCSS
+
+> Note: I still need to know if the items made above still in this step are really necessary. However, from that moment on, using className in the TailWind pattern and CSS mixes in **pages/learning.js** and also in **styles/globals.css** in addition to changes in **tailwind.config.js** started to make some sense and really be applied to my study template
+
 ## Support tools
 - Vercel
 - VS Code
@@ -270,9 +284,7 @@ Connect with me at [LinkedIn](https://www.linkedin.com/in/ricardovolert/)
 Thank you!
 
 
-Thanks to the incredible [Filipe Deschamps](https://github.com/filipedeschamps/) for teaching me a little about this [subject](https://www.youtube.com/watch?v=EW7m2WIvFgQ&ab_channel=FilipeDeschamps).
-
-
+Thanks to the incredible [Filipe Deschamps](https://github.com/filipedeschamps/) for teaching me a little about this [subject](https://www.youtube.com/watch?v=EW7m2WIvFgQ&ab_channel=FilipeDeschamps). Thanks to [Bruno Bertolini (CodarMe)](https://www.youtube.com/watch?v=cV3q3OnxmA8&ab_channel=CodarMe) for the TailWind tips that it also made available in its [repository](https://github.com/CodarMe/lesson-tailwind-nextjs).
 
 ## License
 

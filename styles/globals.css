@@ -5,6 +5,34 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
 * {
   font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body{
+  @apply h-screen;  
+}
+
+body{
+  @apply bg-gunmetal text-white;
+}
+
+a, a:visited{
+  @apply p-0 inline-block text-center align-middle text-red;
+}
+
+a.menuTop, a.menuTop:visited{
+  @apply px-3 inline-block text-center align-middle text-yellow-400 uppercase;
+}
+
+
+#_next{
+  @apply h-screen flex flex-col;  
+}
+
+code{
+  font-family: 'Courier Prime', Courier, monospace;
 }
