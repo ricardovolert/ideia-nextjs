@@ -268,6 +268,21 @@ and created the **next.config.js** page at the root of the project with the foll
 
 > Note: I still need to know if the items made above still in this step are really necessary. However, from that moment on, using className in the TailWind pattern and CSS mixes in **pages/learning.js** and also in **styles/globals.css** in addition to changes in **tailwind.config.js** started to make some sense and really be applied to my study template
 
+Well, at least it worked locally, for Vercel's Deploy there was an error regarding the CSS of these steps above:
+
+> Warning: Built-in CSS support is being disabled due to custom CSS configuration being detected.
+
+and 
+
+> Global CSS cannot be imported from files other than your Custom <App>. Please move all global CSS imports to pages/_app.js.
+
+Oh, I installed sass
+
+    $ npm install sass
+
+And I deleted **next.config.js** and king the local server that apparently worked naturally, just like when there was the **next.config.js** file in the project.
+
+
 ## Support tools
 - Vercel
 - VS Code
