@@ -194,6 +194,66 @@ now let's change something we want and let's push this:
 
 and at this moment Vercel will already deploy to a separate URL and we can observe the "pull request" on Github that Vercel is commenting on the creation of this deploy and when it is finished, will add the URL for pre-review. Thus, we will have two versions running at the same time.
 
+## Some Updates
+
+> Of course, some pages have been inserted and will continue to be
+> updated as the project develops, so it is important first of all to
+> detail what they are for:
+
+### Step 1
+
+The page at /pages/nav.js is designed to serve as a main menu for the entire site. This feature can be replicated and expanded in a number of ways on a website. To use it in the other pages that are in the *pages/* directory, something like for example is used in the **.js** documents:
+
+   **[in page header in js]**
+   
+
+    import Nav from '../components/nav'
+
+**[within the function that loads the content of the page]**
+
+     <Nav />
+
+### Step 2
+
+The page **/pages/404.js** is for any error404.
+
+
+### Step 3
+
+At some point, I encountered the CSS problem, as it is something that caused me some difficulty to make it work. To solve this problem, I found a solution that is based on installing TailWind and using it instead of Bootstrap and with that, I can still have a working CSS file! \o/
+
+>  [https://tailwindcss.com/docs/guides/nextjs](https://tailwindcss.com/docs/guides/nextjs)
+> The steps to work with the link above are basically:
+
+We will use the VS Code integrated terminal and at first we will use the following installation command
+
+    $ npm install tailwindcss@latest postcss@latest autoprefixer@latest
+
+And then, inside the project folder, let's start **TailwindCSS**
+
+    $ npx tailwindcss init -p
+
+This command will generate the *tailwind.config.js* and *postcss.config.js* files
+
+After that, we update or create the **pages/_app.js** file with the following content
+
+    // pages/_app.js
+    import '../styles/globals.css'
+    
+    function MyApp({ Component, pageProps }) {
+      return <Component {...pageProps} />
+    }
+    
+    export default MyApp
+
+In the root directory, where the pages directory is located, we create the *styles* directory and inside it we insert the file *globals.css*
+
+    /* ./styles/globals.css */
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+
 ## Support tools
 - Vercel
 - VS Code
