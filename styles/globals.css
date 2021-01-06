@@ -21,7 +21,7 @@ body{
 }
 
 a, a:visited{
-  @apply p-0 inline-block text-center align-middle text-red;
+  @apply p-0 inline-block text-center align-baseline text-red;
 }
 
 a.menuTop, a.menuTop:visited{
@@ -35,4 +35,16 @@ a.menuTop, a.menuTop:visited{
 
 code{
   font-family: 'Courier Prime', Courier, monospace;
+}
+
+.btn{
+  @apply outline-none py-2 px-4 text-white font-semibold rounded-md;
+}
+
+.btn-green{
+  @apply bg-green-500;
+}
+
+.btn-green:hover{
+  @apply bg-green-600;
 }

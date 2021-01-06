@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
 import Nav from '../../components/nav'
+import NewNav from '../../components/newnav'
 
 function LoginPage(){
     return (
@@ -14,13 +15,19 @@ function LoginPage(){
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            <NewNav />
+
             <Nav />
 
             <div className="py-10">
                 <h1 className="text-5xl text-center text-accent-1">
-                    Login
+                    Login - Essa página é um erro por conta do NewNav
                 </h1>
             </div>
+
+            <p>Esta página é para verificar erros que existem ao inserir um script como 
+                tradicionalmente seria no html justamente por algo de carregar uma página por um clique e por 
+                reload dela são diferentes a sua render pelo server.</p>
 
             <p>
                 <Link href="/">
@@ -28,8 +35,7 @@ function LoginPage(){
                 </Link>
             </p>
 
-
-        </div>
+        </div>    
     )
 }
 

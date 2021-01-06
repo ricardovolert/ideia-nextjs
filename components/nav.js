@@ -27,6 +27,16 @@ function Navbar(props) {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/tailwind">
+                        <a className="text-blue-500 no-underline">TailWind</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/calculator">
+                        <a className="text-blue-500 no-underline">Calculator</a>
+                    </Link>
+                </li>
+                <li>
                     <Link href="/auth/login">
                         <a className="text-blue-500 no-underline">Login</a>
                     </Link>

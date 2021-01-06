@@ -145,6 +145,10 @@ function Aprendizado(){
                     <li>Estou inserindo em <Link href="/admin"><a>Admin</a></Link> vários recursos descritos na documentação com intenção de entender a lógica para elaborar template. Para isso estou estudando o Core Concepts <Link href="https://tailwindcss.com/docs/utility-first"><a>Core Concepts</a></Link></li>
                     <li>Antes de corrigir um erro de CSS verifique o arquivo <code>tailwind.js</code></li>
                     <li>Conforme pode ser analisado nos códigos das páginas que usam class no lugar de className, veremos erro no console com o DOM sugerindo que a propriedade class seja className</li>
+                    <li><Link href="https://www.devsamples.com/javascript/next/nextjs-adding-a-script-tag">DevSamples</Link> foi uma ótima referência para saber como inserir uma tag script diretamente no NextJS, mas agora precisa entender e verificar como retrair um site pela resolução aumentar.</li>
+                    <li>Existe com base nessa ideia acima, um erro do uso de javascript por script apresentado em <Link href="/auth/login"><a>login</a></Link></li>
+                    <li>Existe uma tentativa de elaborar um layout de form login <Link href="/tailwind"><a>aqui</a></Link></li>
+                    <li>Calculadora e funções em JS são apresentadas <Link href="/calculator"><a>aqui</a></Link></li>
                 </ul>
 
                 <h1 className="text-4xl text-yellow-400">
@@ -152,6 +156,7 @@ function Aprendizado(){
                 </h1>
 
                 <ul className="list-none list-decimal">
+                    <li>Entender melhor como minificar arquivos - conforme está nos ultimos minutos desta <Link href="https://www.youtube.com/watch?v=1qH3wAtX4So&t=14s&ab_channel=RicardoSanches"><a>aula</a></Link></li>
                     <li>Desenvolver Forms</li>
                     <li>Estudar Background com imagens</li>
                     <li>Integrar Forms com DB MySQL e DB Mongodb</li>
